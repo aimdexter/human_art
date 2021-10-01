@@ -10,16 +10,16 @@
     <title>Human Art</title>
 </head>
 
-<body>
-   <navbar>
-       <div class="logo">Human Art</div>
-       <div class="links">
-           <a href="#">Home</a>
+<body class="font-Montserrat">
+   <navbar class="container mx-auto grid grid-cols-12 gap-4 pt-8 pb-16 justify-between">
+       <div class="logo col-span-3 font-bold text-4xl text-fuchsia-700 ">Human Art</div>
+       <div class="links col-span-6 flex flex-row gap-16 font-bold ml-16 place-self-center">
+           <a class="text-fuchsia-700 " href="#">Home</a>
            <a href="#">Programs</a>
            <a href="#">About Us</a>
            <a href="#">Contact Us</a>
        </div>
-       <div class="social-media">
+       <div class="social-media col-span-3 flex flex-row space-x-16 place-self-center">
            <div class="facebook">
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13.4992 0.0037452L11.165 0C8.54265 0 6.84796 1.73871 6.84796 4.42982V6.47227H4.50106C4.29826 6.47227 4.13403 6.63668 4.13403 6.83949V9.79876C4.13403 10.0016 4.29845 10.1658 4.50106 10.1658H6.84796V17.633C6.84796 17.8358 7.01219 18 7.21499 18H10.277C10.4798 18 10.6441 17.8356 10.6441 17.633V10.1658H13.3881C13.5909 10.1658 13.7552 10.0016 13.7552 9.79876L13.7563 6.83949C13.7563 6.74211 13.7175 6.64886 13.6488 6.57994C13.5801 6.51103 13.4865 6.47227 13.3891 6.47227H10.6441V4.74086C10.6441 3.90868 10.8424 3.48622 11.9264 3.48622L13.4988 3.48566C13.7014 3.48566 13.8656 3.32124 13.8656 3.11863V0.370775C13.8656 0.168347 13.7016 0.00411972 13.4992 0.0037452Z" fill="#221F1F"/>
@@ -54,48 +54,45 @@
        </div>
     </navbar>
    <main>
-    <header>
-    <div class="header-left">
-        <div class="header-text">
-            Yoga is the perfect opportunity to be curious about <span>who you are.</span>
-        </div>
-        <div class="header-text2">
-            Yoga is a great way to work on your flexibility and strength. Just about everyone can do it.
-        </div>
-        <div class="buttons">
-            <div class="join-us">
-                Join us
-            </div>
-            <div class="join-us">
-                Know more
+    <header class="container grid grid-cols-12 mx-auto pb-40">    
+        <div class="header-left col-span-6 leading-loose">
+            <p class="header-text text-5xl font-normal mt-32 pb-16 leading-normal">
+                Yoga is the perfect opportunity to be curious about <br> 
+                <span class="font-bold mark">who you are.</span>
+            </p>
+            <p class="header-text2 text-lg font-medium pb-16 leading-relaxed">
+                Yoga is a great way to work on your flexibility and strength. <br>Just about everyone can do it.
+            </p>    
+            <div class="buttons flex space-x-4 text-xl">
+                <button class="join-us bg-fuchsia-700 text-white font-extrabold px-8 py-2 hover:bg-fuchsia-500 focus:outline-none focus:ring-2 focus:ring-fuchsia-500 focus:ring-opacity-50">Join us</button>
+                <button class="know-more px-8 py-2 bg-gray-200 font-extrabold">Know more</button>
             </div>
         </div>
-    </div>
-    <div class="header-img">
+    </header>
+    <div class="header-img absolute top-0 right-0">
         <img src="./public/images/header-right.svg" alt="">
     </div>
-    </header>
-    <div class="who-we-are">
+    <div class="who-we-are flex">
         <div class="left-img">
             <img src="./public/images/who-we-are-left.svg" alt="">
         </div>
-        <div class="text">
-            <span class="title">Who we are?</span>
-           <span class="">We are Located in the heart of Gorha Village, Healthx Yoga Company offers yoga seven days a
+        <div class="text flex-1 pt-60 leading-loose">
+            <span class="title mark font-extrabold text-fuchsia-700 text-5xl">Who we are?</span>
+            <p class="pt-8 pr-56 font-semibold leading-loose text-justify text-lg">We are Located in the heart of Gorha Village, Healthx Yoga Company offers yoga seven days a
             week. Regardless if you are new to yoga or have a daily practice, we’ve got you covered. From 
             gentle and meditative or vigorous and challenging, you can be sure to find a home at Healthx  
-            Yoga Company.</span>
+            Yoga Company.</p>
         </div>
     </div>
-    <div class="what-we-do">
+    <div class="what-we-do relative">
+        <div class="img absolute -top-96 right-0 ">
+            <img src="./public/images/who-we-are-right.svg" alt="">
+        </div>    
     <div class="text">
             <span class="title">What we do?</span>
             <span class=""> We are about building community while growing your personal practice We hope you’ll enter
             each class feeling welcomed and leave feeling
            inspiredchallenged and restored.</span>
-    </div>
-    <div class="img">
-        <img src="./public/images/who-we-are-right.svg" alt="">
     </div>
     </div>
     <div class="programs">
