@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.3.4",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.9"
+  },
+  "dependencies": {
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.2"
+  },
+  "scripts": {
+    "build-css": "postcss src/styles.css -o public/styles.css --watch"
+  }
+}
